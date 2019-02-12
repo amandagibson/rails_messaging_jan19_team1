@@ -1,12 +1,13 @@
-When("I visit the page") do
-    root_path '/'
+Given ("I visit the page") do
+    visit root_path 
   end
   
-  Then("I should see Sign-up") do
-    pending # Write code here that turns the phrase above into concrete actions
+  When("I click on {string}") do |button|
+    click_on button
   end
   
-  Then("Then I should be able to click on {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Then("I should be redirected to sign up page") do
+    expect(current_path).to eq new_user_registration_path
   end
+  
   
