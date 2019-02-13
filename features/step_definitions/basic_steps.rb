@@ -2,10 +2,6 @@
     visit root_path
   end
   
-  Then ("I should see {string}") do |content|
-    expect(page).to have_content content
-  end
-  
   When ("I click on {string} link") do |string|
     click_on string
   end
