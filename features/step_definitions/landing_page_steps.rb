@@ -14,6 +14,6 @@ Then("I fill in {string} with {string}") do |field, content|
 	fill_in field, with: content
 end
 
-Then("I should see {string}") do |string|
-	expect(string).to eq "Welcome! You have signed up successfully."
+Then("I should see {string}") do |content|
+	expect(page).to have_content content 
 end
