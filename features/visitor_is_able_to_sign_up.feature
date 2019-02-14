@@ -16,7 +16,6 @@ Feature: Visitor is able to sign up
 				When I click on "Create"
 				Then I should see "Welcome! You have signed up successfully."
 
-
 		Scenario: User provides insuficient "details for password"
 				And I fill in "Name" with "Boa"
 				And I fill in "Email" with "dopekids@live.com"
@@ -24,7 +23,6 @@ Feature: Visitor is able to sign up
 				And I fill in "Password confirmation" with "Wrap009"
 				When I click on "Create"
 				Then I should see "Password is too short (minimum is 8 characters)"
-
 
 		Scenario: User provides "too many characters for name"
 				And I fill in "Name" with "amandamaegibson"
