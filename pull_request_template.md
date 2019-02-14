@@ -1,11 +1,14 @@
-# Link to feature description(Waffle or Piviotal Tracker)
+https://waffle.io/amandagibson/rails_messaging_jan19_team1
 
-[Add Feature name  here](add_feature_url_here)
+Sign up
+https://waffle.io/amandagibson/rails_messaging_jan19_team1/cards/5c6297ad42a86601479699c0
 
 # User Story
 
 
-Insert User Story here
+As a user
+In order to access the mailboxer
+I want to be able to sign up
 
 
 # Screenshots
