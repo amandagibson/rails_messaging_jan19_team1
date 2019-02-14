@@ -23,4 +23,3 @@
   When("I click on {string}") do |button|
     click_on button
 	end
-	
