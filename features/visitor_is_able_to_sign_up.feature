@@ -33,3 +33,4 @@ Feature: Visitor is able to sign up
 				And I fill in "Password confirmation" with "Wrap009do"
 				When I click on "Create"
 				Then I should see "Name is too long (maximum is 10 characters)"
+				

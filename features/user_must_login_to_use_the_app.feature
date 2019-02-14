@@ -32,3 +32,4 @@ Feature: Log in user from the main page
 				And I fill in 'Password' with 'password'
 				And I click on 'Log in'
 				Then I should see "Invalid Email or password."
+				
