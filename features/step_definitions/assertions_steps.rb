@@ -5,3 +5,8 @@ end
 Then("I am logged into my account") do
 	expect(current_path).to eq welcome_index
 end
+
+Then("I should see all my messages") do
+    expect
+end
+  

@@ -1,4 +1,4 @@
-  Given("following users exist") do |table|
+  Given("following user exists") do |table|
     table.hashes.each do |user|
       FactoryBot.create(:user, user)
     end
@@ -14,4 +14,12 @@
 
   When("I click on {string}") do |button|
     click_on button
-	end
+  end
+  
+  When("I am in my inbox") do
+    pending # Write code here that turns the phrase above into concrete actions
+  end
+  
+ 
+
+ 
