@@ -13,9 +13,9 @@ Feature: Logged in visitor can create and send emails
          And I am visiting the "Inbox"                      
             
       Scenario: User can create and send email
-         When I click "Compose"
+         When I click on "Compose"
          And select "Olivia" as "Recipient"
-         And fill in "Subject" with "Hello"
-         And fill in "Message" with "What's up?"
-         And click "Send Message"
+         And I fill in "Subject" with "Hello"
+         And I fill in "Message" with "What's up?"
+         And I click on "Send Message"
          Then I should see "Your message was successfully sent!"
