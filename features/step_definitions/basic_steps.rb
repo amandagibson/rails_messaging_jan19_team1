@@ -15,11 +15,10 @@
   When("I click on {string}") do |button|
     click_on button
   end
-  
-  When("I am in my inbox") do
-    pending # Write code here that turns the phrase above into concrete actions
-  end
-  
- 
 
- 
+	When("I am in my inbox") do
+		expect(current_path).to eq mailbox_inbox
+	end
+
+
+
