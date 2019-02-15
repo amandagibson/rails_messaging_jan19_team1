@@ -22,13 +22,18 @@
     login_as user, scope: :user
   end
   
-  Given("I am visiting the {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Given("I am visiting the {string}") do |path|
+    case path
+      when "Inbox"
+       visit mailbox_inbox_path
+     else
+       return false
+    end
   end
   
   
-  When("select {string} as {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+  When("select {string} as {string}") do |names, string2|
+    select names, from: string2
   end
  
   
